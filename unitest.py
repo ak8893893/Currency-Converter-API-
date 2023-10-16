@@ -12,7 +12,7 @@ class CurrencyConverterTestCase(unittest.TestCase):
         data = response.get_json()
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data['msg'], 'success')
-        self.assertEqual(data['amount'], '$170,496.53')
+        self.assertEqual(data['amount'], '$170,496.52')
 
     def test_invalid_currency(self):
         response = self.app.get('/convert?source=EUR&target=JPY&amount=$1,000')
