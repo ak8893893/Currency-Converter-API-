@@ -78,4 +78,5 @@ API 使用以下匯率資料作為範例資料：
 ```
 
 Author: AK Lai
+
 License: MIT
